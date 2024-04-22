@@ -20,35 +20,10 @@
   </head>
   <body>
     <div id="nav"></div>
-    <div
-      style="
-        background-image: url(/access/Blog-heatmaps-thumbnail.png);
-        background-position: center center;
-        height: 400px;
-        background-size: 100% 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <span
-        style="
-          font-family: 'Comic Sans MS', Arial;
-          font-weight: 400;
-          font-size: 100px;
-        "
-        >Heat Map</span
-      >
+    <div class="heat_map">
+      <span class="heat_map_text">Heat Map</span>
     </div>
-    <section
-      style="
-        display: flex;
-        gap: 200px;
-        justify-content: center;
-        justify-items: center;
-        margin-top: 50px;
-      "
-    >
+    <section class="select_time">
       <!--Thư viện datetimepicker-->
       <div style="text-align: center">
         <h1>Start Time</h1>
@@ -59,6 +34,10 @@
           style="width: 240px; font-size: 24px; text-align: center"
         />
       </div>
+      <i
+        class="fa fa-arrow-circle-right"
+        style="font-size: 24px; margin-top: 40px"
+      ></i>
       <div style="text-align: center">
         <h1>Finish Time</h1>
         <input
@@ -80,13 +59,22 @@
     >
       <img
         id="result"
+        class="image_result"
         src="/access/Passive-Avoidance-Test.jpg"
-        style="width: 550px; border: 2px solid #ccc; border-radius: 10px"
       />
     </div>
 
-    <div style="display: flex; justify-content: center; align-items: center">
-      <button id="getDataBtn">Get Data</button>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+      "
+    >
+      <div style="width: 200px; height: 150px;">
+        <a class="btn btn--action" id="getDataBtn"><span>Get Data</span></a>
+      </div>
     </div>
 
     <!-- script -->

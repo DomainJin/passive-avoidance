@@ -19,3 +19,221 @@ button {
 .nav-item.nav-link.active {
   color: #007bff; /* Màu chữ */
 }
+
+.passive-avoidance {
+  font-family: "Comic Sans MS", Arial;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.container_index {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 40px;
+}
+.passive-avoidance {
+  background-image: url(/access/Passive-Avoidance-Test.jpg);
+  background-position: center center;
+  height: 400px;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heat_map {
+  background-image: url(/access/Blog-heatmaps-thumbnail.png);
+  background-position: center center;
+  height: 400px;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heat_map {
+  font-family: "Comic Sans MS", Arial;
+  font-weight: 400;
+  font-size: 100px;
+}
+.nav-bar-items {
+  display: flex;
+  justify-content: end;
+}
+.image_result {
+  width: 550px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.select_time {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .passive-avoidance_text {
+    font-family: "Comic Sans MS", Arial;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .heat_map_text {
+    font-family: "Comic Sans MS", Arial;
+    font-weight: 400;
+    font-size: 60px;
+  }
+  .heat_map {
+    background-image: url(/access/Blog-heatmaps-thumbnail.png);
+    background-position: center center;
+    height: 350px;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .passive-avoidance {
+    background-image: url(/access/Passive-Avoidance-Test.jpg);
+    background-position: center center;
+    height: 300px;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container_index {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+  }
+  .navbar-toggler-icon {
+    color: red; /* Đổi màu thành màu đỏ */
+    border: 2px solid blue;
+    padding: 5px;
+  }
+  .image_result {
+    width: 390px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  .select_time {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+
+.button{
+  position:relative;
+  display:inline-block;
+  margin:20px;
+}
+
+.button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#385850;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #263a35;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #263a35;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #263a35;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:#448676;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #263a35;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #263a35;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #263a35;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all .5s ease; 
+}
+.btn--action{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: #f6e58d;
+  color: #000;
+  transition: all .5s ease 0s; 
+  box-shadow: 0 10px #f9ca24;
+}
+
+/* .btn--action:hover{
+box-shadow: inset 0 0 0 .25rem #ffbe76;
+} */
+
+.btn--action span{
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  transition: all .5s ease;
+}
+
+.btn--action span:before{
+  content: '\f04c'; 
+  color: #000;
+  font-size: 1rem;
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  left: 1.5rem;
+  opacity: 0;
+  transition: all .1s ease 0s;
+}
+
+.btn--action:hover span{
+  padding-left: 1.5rem; 
+}
+
+.btn--action:hover span:before{
+  left: 0;
+  opacity: 1;
+}
+
+.btn--action:active {
+  box-shadow: 0 5px #f0932b;
+  transform: translateY(5px);
+}
