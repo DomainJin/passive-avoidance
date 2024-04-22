@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+.navbar-colored {
+  background-color: black !important; /* Thay đổi màu nền của navbar khi cuộn trang xuống */
+}
+
+.nav-item.nav-link.active {
+  color: #007bff; /* Màu chữ */
+}
