@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainWindow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1192px;
+            height: 875px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .group-box {
+            width: 1111px;
+            height: 211px;
+            margin: 90px auto 0;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .group-box h2 {
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+        }
+        .form-group input,
+        .form-group select {
+            padding: 5px;
+        }
+        .form-group select {
+            width: 160px;
+        }
+        .form-group input[type="number"] {
+            width: 60px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .status-bar {
+            width: 100%;
+            height: 21px;
+            background-color: #f1f1f1;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Passive Avoidance</div>
+        <div class="group-box">
+            <h2>Information</h2>
+            <div class="form-group">
+                <label for="id-mouse">ID Mouse:</label>
+                <select id="id-mouse">
+                    <option value="nvidia4090">NVIDIA4090</option>
+                    <option value="alzhimer">Alzhimer</option>
+                    <option value="injected">Injected</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="status-mouse">Status Mouse:</label>
+                <select id="status-mouse">
+                    <option value="alzhimer">Alzhimer</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="injected">Injected</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="drug">Drug:</label>
+                <select id="drug">
+                    <option value="paraxetamon" selected>Paraxetamon</option>
+                    <option value="alzhimer">Alzhimer</option>
+                    <option value="injected">Injected</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="run-time">Run Time:</label>
+                <input type="number" id="run-time">
+            </div>
+            <div class="form-group">
+                <button class="button">Getting Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="status-bar"></div>
+</body>
+</html>
