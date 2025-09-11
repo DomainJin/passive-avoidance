@@ -2,6 +2,8 @@ Description: Design a "passive avoidance" model and monitor mouse reflexes and b
 
 Technology: Image Processing, PyQt6 Designer, AC shocker Designing (adjust voltage and current AC), Modbus RS485, Web Application.
 
-![Tên ảnh](https://github.com/DomainJin/passive-avoidance/blob/main/icon.png)
+<p align="center">
+  <img src="đường_dẫn_ảnh" alt="mô tả ảnh" />
+</p>
 
 
